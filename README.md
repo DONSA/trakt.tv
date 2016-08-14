@@ -56,7 +56,7 @@ trakt.get_codes()
         return trakt.poll_access(poll);
         // this second call is required to verify if app was authorized
     })
-    .catch(error {
+    .catch(error => {
         // Handles errors
         // specific error.message == 'Expired' will be thrown
         // in case the verification_url was not used in time
